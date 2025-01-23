@@ -1,0 +1,46 @@
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --header-bg: #ffffff;
+  --card-bg: #ffffff;
+  --card-border: rgba(0,0,0,0.125);
+}
+
+[data-bs-theme="dark"] {
+  --bg-color: #212529;
+  --text-color: #f8f9fa;
+  --header-bg: #2b3035;
+  --card-bg: #2b3035;
+  --card-border: #495057;
+}
+
+/* Ajouter pour le texte dans la navbar */
+.navbar-brand {
+  color: var(--text-color) !important;
+}
+
+/* Remplacer le reste des [data-theme] */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--header-bg) !important;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.card {
+  background-color: var(--card-bg) !important;
+  border-color: var(--card-border) !important;
+  color: var(--text-color) !important;
+}
+
+.btn-outline-secondary {
+  border-color: var(--card-border) !important;
+  color: var(--text-color) !important;
+}
+
+.theme-toggle {
+  color: var(--text-color) !important;
+}
